@@ -13,7 +13,7 @@ namespace ARG.Dominio
 
         [Required(ErrorMessage = "Campo {0} de preenchimento obrigatório!")]
         public string Nome { get; set; }
-        
+
         public string Sexo { get; set; }
         public DateTime DataNascimento { get; set; }
         public int Idade { get; set; }

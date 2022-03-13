@@ -1,4 +1,6 @@
 using ARG.Infraestrutura;
+using ARG.Infraestrutura.Implementation;
+using ARG.Infraestrutura.Interfaces;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.EntityFrameworkCore;
@@ -27,6 +29,9 @@ namespace ARG.Apresentacao
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "ARG.Apresentacao", Version = "v1" });
             });
+
+            services.AddScoped<INiveisRepository, NiveisRepository>();
+            services.AddScoped<IDesenvolvedoresRepository, DesenvolvedoresRepository>();
 
             services.AddDbContext<ContextoPrincipal>(options => options.UseSqlServer(Configuration.GetConnectionString("ApiRestGazinConnectionString")));
         }

@@ -19,10 +19,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
     <ProjectReference Include="..\ARG.Infraestrutura\ARG.Infraestrutura.csproj" />
   </ItemGroup>
 
