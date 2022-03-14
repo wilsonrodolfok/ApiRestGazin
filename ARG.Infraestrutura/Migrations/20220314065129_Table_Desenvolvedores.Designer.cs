@@ -10,8 +10,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ARG.Infraestrutura.Migrations
 {
     [DbContext(typeof(ContextoPrincipal))]
-    [Migration("20220313220505_Table_Niveis")]
-    partial class Table_Niveis
+    [Migration("20220314065129_Table_Desenvolvedores")]
+    partial class Table_Desenvolvedores
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
